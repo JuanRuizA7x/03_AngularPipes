@@ -6,7 +6,7 @@ export class CapitalizadoPipe implements PipeTransform {
     transform(value: string, todas: boolean = true): string {
 
         value = value.toLowerCase();
-        let nombres = value.split(' ');
+        const nombres = value.split(' ');
         let retorno = '';
 
         if (todas) {
